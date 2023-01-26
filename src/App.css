@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+html, body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #222529;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  color: #ff7373;
+  text-decoration: none;
+  transition: all 0.05s ease-in-out;
+}
+a:hover {
+  text-decoration: underline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1680px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "logo menulinkicons";
+}
+.header .logo {
+  grid-area: logo;
+  font-size: 35px;
+  font-weight: 700;
+  color: #222529;
+  text-decoration: none;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+}
+.header .menu {
+  grid-area: menu;
+  display: none;
+  height: 100%;
+  overflow: hidden;
+}
+.header .menu .menu-link {
+  display: block;
+  margin: 15px;
+  color: #222529;
+  font-weight: 500;
+}
+.header .menu .menu-link:hover {
+  color: #ff7373;
+  text-decoration: none;
+}
+.header .menu .active {
+  color: #ff7373;
+  text-decoration: none;
+}
+.header .menulinkicons {
+  grid-area: menulinkicons;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header .menulinkicons .menu-link {
+  background-color: #afffff;
+  color: #222529;
+  height: 36px;
+  width: 36px;
+  box-shadow: 0 0 6px 4px rgbs(0, 0, 0, 0.06);
+  border-radius: 50%;
+  margin-left: 20px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  transition: all 0.1s ease-in-out;
+}
+.header .menulinkicons .menu-link:hover {
+  color: #afffff;
+  background-color: #222529;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width: 1200px) {
+  .header {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "logo menu menulinkicons";
+  }
+  .header .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.showcase {
+  display: flex;
+  background-color: #e6e6e6;
+  background: linear-gradient(#e6e6e6 0%, #f5f5f5 100%);
+  flex-direction: row;
+  justify-content: space-between;
+}
+.showcase .container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+.showcase img {
+  flex: 1;
+  width: auto;
+  height: 100%;
 }
