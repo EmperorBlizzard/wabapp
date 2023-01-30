@@ -6,12 +6,15 @@ const Showcase = () => {
     <section className='showcase'>
         <div className='container'>
             <div className='content'>
-                <div>
-
+                <div className='titles'>
+                  <p className='title-2'>GET UP TO 40% OFF</p>
+                  <p className='title-1'>Don't Miss This Opportunity</p>
+                  <p className='title-3'>Online shopping free home delivery over $100</p>
+                  <button className='btn btn-theme mt-4'></button>
                 </div>
-                <button></button>
+                
             </div>
-            <img src={Image} alt=''/>
+            <img src={Image} alt=""/>
         </div>
     </section>
   )

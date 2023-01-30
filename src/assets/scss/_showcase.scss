@@ -1,23 +1,33 @@
 .showcase{
-    display: flex;
+    
     background-color: $color-linear-gradient-dark;
     background: linear-gradient($color-linear-gradient-dark 0%, $color-linear-gradient-light 100%);
-    flex-direction: row;
-    justify-content: space-between;
+    
 
     .container{
-        flex: 1;
+        height: 833px;
         display: flex;
         justify-content: center;
-        align-items: center;
-        border: 1px solid black;
         
+        .content{
+            flex: 1;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+
+            .titles{
+                margin-left: 150px;
+            }
+        }
+
+        
+        
+        img{
+            flex: 1;
+            width: auto;
+            height: 100%;
+        }
     }
  
-    img{
-        flex: 1;
-
-        width: auto;
-        height: 100%;
-    }
+    
 }
