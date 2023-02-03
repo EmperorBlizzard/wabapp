@@ -23,6 +23,7 @@ a{
 
 
 .title-1{
+    color: $color-theme;
     font-size: 65px;
     font-weight: 900;
     line-height: 1;
@@ -79,4 +80,8 @@ a{
         right: 10px;
     }
 
+}
+
+.rating{
+    color: $color-theme;
 }

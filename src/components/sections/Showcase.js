@@ -4,6 +4,7 @@ import Image from '../../assets/images/showcase-img.png'
 const Showcase = () => {
   return (
     <section className='showcase'>
+      
         <div className='container'>
             <div className='content'>
                 <div className='titles'>
