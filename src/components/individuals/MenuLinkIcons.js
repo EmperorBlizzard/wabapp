@@ -1,9 +1,9 @@
 import React from 'react'
 import MenuLink from './MenuLink'
 
-const MenuLinksIcons = () => {
+const MenuLinkIcons = () => {
   return (
-    <div className='menulinkicons'>
+    <div className="menulinkicons">
       <MenuLink name={(<i className="fa-regular fa-magnifying-glass"></i>)}  link="/search" />
       <MenuLink name={(<i className="fa-regular fa-code-compare"></i>)}  link="/compare" />
       <MenuLink name={(<i className="fa-regular fa-heart"></i>)}  link="/wishlist" />
@@ -12,4 +12,4 @@ const MenuLinksIcons = () => {
   )
 }
 
-export default MenuLinksIcons
+export default MenuLinkIcons

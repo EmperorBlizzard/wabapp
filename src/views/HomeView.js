@@ -1,14 +1,15 @@
 import React from 'react'
 import Header from '../components/sections/Header'
-import Showcase from '../components/sections/Showcase'
 import ProductsGrid from '../components/sections/ProductsGrid'
+import Showcase from '../components/sections/Showcase'
+
 
 const HomeView = () => {
   return (
     <div id="home">
-        <Header />
-        <Showcase />
-        <ProductsGrid title="Featured products"/>
+      <Header />
+      <Showcase />
+      <ProductsGrid title="Featured Products" />
     </div>
   )
 }

@@ -53,10 +53,11 @@
                     }
                 }
             }
-
             .btn-theme {
                 position: absolute;
                 bottom: 0;
+                
+                
             }
         }
 
@@ -69,7 +70,7 @@
                 color: $color-gray;
             }
 
-            .card-title{
+            .card-title {
                 font-size: 1rem;
                 font-weight: 700;
             }
@@ -82,10 +83,10 @@
         }
 
         &:hover {
-            .card-menu{
+            .card-menu {
                 display: block !important;
             }
-            .btn-theme{
+            .btn-theme {
                 display: block !important;
             }
         }

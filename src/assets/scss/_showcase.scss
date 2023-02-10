@@ -1,33 +1,30 @@
-.showcase{
-    
-    background-color: $color-linear-gradient-dark;
-    background: linear-gradient($color-linear-gradient-dark 0%, $color-linear-gradient-light 100%);
-    
+.showcase {
 
-    .container{
+    background: $color-linear-gradient-dark;
+    background: linear-gradient(90deg, $color-linear-gradient-dark 0%, $color-linear-gradient-light 100%);
+
+    .container {
         height: 833px;
         display: flex;
-        justify-content: center;
-        
-        .content{
+        justify-content: space-between;
+
+        .content {
             flex: 1;
             display: flex;
             justify-content: left;
             align-items: center;
 
-            .titles{
+            .titles {
                 margin-left: 150px;
             }
         }
 
-        
-        
-        img{
+        img {
             flex: 1;
             width: auto;
             height: 100%;
         }
     }
- 
-    
+
+
 }

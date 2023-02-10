@@ -1,64 +1,64 @@
 html, body {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: $color-dark;
 }
 
-a{
+a {
     color: $color-theme;
     text-decoration: none;
     transition: all 0.05s ease-in-out;
 
-    &:hover{
+    &:hover {
         text-decoration: underline;
     }
 }
 
 @media (min-width: 1600px) {
-    .container{
+    .container {
         max-width: $max-width;
     }
 }
 
-
-.title-1{
-    color: $color-theme;
+.title-1 {
     font-size: 65px;
     font-weight: 900;
     line-height: 1;
     margin-bottom: 2rem;
 }
-.title-2{
+.title-2 {
     font-size: 35px;
     font-weight: 700;
     line-height: 1;
     margin-bottom: 1rem;
 }
-.title-3{
+.title-3 {
     font-size: 20px;
     font-weight: 400;
     line-height: 1;
     margin-bottom: 1rem;
 }
 
-.btn{
+.btn {
     border-radius: 0;
+    background-color: $color-theme;
 }
 
-.btn-theme{
+.btn-theme {
+    
     position: relative;
     background-color: $color-theme !important;
     color: $color-white !important;
     padding: 20px 50px;
 
-    &:hover{
+    &:hover {
         background-color: $color-dark !important;
         color: $color-white !important;
         text-decoration: none;
     }
 
-    &::before{
+    &::before {
         position: absolute;
         content: '';
         border-left: 1px solid $color-white;
@@ -79,9 +79,8 @@ a{
         bottom: 10px;
         right: 10px;
     }
-
 }
 
-.rating{
-    color: $color-theme;
+.rating {
+  color: $color-theme;  
 }
