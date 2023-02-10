@@ -1,15 +1,14 @@
 import React from 'react'
 import Logo from '../individuals/Logo'
 import Menu from '../individuals/Menu'
-import MenuLinksIcons from '../individuals/MenuLinksIcons'
-
+import MenuLinkIcons from '../individuals/MenuLinkIcons'
 
 const Header = () => {
   return (
-    <section className='header container'>
+    <section className="header container">
         <Logo />
         <Menu />
-        <MenuLinksIcons />
+        <MenuLinkIcons />
     </section>
   )
 }
